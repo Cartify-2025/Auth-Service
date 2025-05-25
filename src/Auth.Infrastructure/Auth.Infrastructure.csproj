@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Auth.Application\Auth.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Serilog.Extensions.Autofac.DependencyInjection" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>
