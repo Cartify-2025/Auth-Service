@@ -5,7 +5,7 @@ REM Change to Liquibase directory (where both properties and YAML exist)
 cd /d ..\liquibase
 
 REM Run Liquibase with your config
-liquibase --defaultsFile=liquibase.properties update
+liquibase --defaultsFile=liquibase.properties update 2>&1
 
 IF %ERRORLEVEL% NEQ 0 (
     echo Liquibase migration failed!

@@ -36,8 +36,8 @@ namespace Auth.Infrastructure.Migrations
 
                 if (process.ExitCode != 0)
                 {
-                    StaticLogger.Error("Liquibase migration failed: ");
-                    StaticLogger.Error(error);
+                    StaticLogger.Error($"Liquibase migration failed: output {output}");
+                    StaticLogger.Error($"Error Message: {error}");
                     Environment.Exit(process.ExitCode);
                 }
 

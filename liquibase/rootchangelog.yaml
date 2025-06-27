@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
+      file: changelogs/schemas/schemas-changelog.yaml
+  - include:
       file: changelogs/system/system-changelog.yaml
